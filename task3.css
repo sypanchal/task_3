@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.navigation {
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 10rem;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_logo {
+  width: calc(30rem * 0.9);
+  height: calc(8rem * 0.9);
+}
+
+.nav_items {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+  font-size: 2.2rem;
+}
+
+.nav_item,
+.nav_logo {
+  cursor: pointer;
+}
+
+.cta-btn {
+  background-color: #fff;
+  font-size: 2.5rem;
+  color: #000;
+  border-radius: 1rem;
+  border: none;
+}
+
+.container {
+  margin: 2rem;
+  display: grid;
+  grid-template-rows: repeat(
+    4,
+    [row-start] minmax(min-content, 36rem) [row-end]
+  );
+  grid-template-columns: repeat(8, [col-start] minmax(auto, auto) [col-end]);
+  gap: 2rem;
+  position: relative;
+}
+
+.sidebar {
+  background-color: #ffcccc;
+  grid-row: row-start 1 / row-end 2;
+  grid-column: col-start 1 / col-end 4;
+}
+
+.section-1 {
+  background-color: #ffd4c7;
+  grid-row: row-start 1 / row-end 1;
+  grid-column: col-start 5 / col-end 8;
+}
+
+.section-2 {
+  background-color: #bab9e2;
+  grid-row: row-start 2 / row-end 2;
+  grid-column: col-start 5 / col-end 8;
+}
+
+.section-3 {
+  background-color: #d7bdbd;
+  grid-row: row-start 3 / row-end 3;
+  grid-column: col-start 1 / col-end 6;
+}
+
+.section-4 {
+  background-color: #e1ffc3;
+  grid-row: row-start 3 / row-end 3;
+  grid-column: col-start 7 / col-end 8;
+}
+
+.section-5 {
+  background-color: #77dff5;
+  grid-row: row-start 4 / row-end 4;
+  grid-column: col-start 1 / col-end 2;
+}
+
+.section-6 {
+  background-color: #d7d4bd;
+  grid-row: row-start 4 / row-end 4;
+  grid-column: col-start 3 / col-end 8;
+}
+
+.footer {
+  height: 6.5rem;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* 0 - 600 px -  Phone */
+@media only screen and (max-width: 37.5em) {
+  html {
+    box-sizing: border-box;
+    font-size: 43.75%;
+  }
+}
+
+/* 600 - 900 px -  Tab Port */
+@media only screen and (max-width: 56.25em) {
+  html {
+    box-sizing: border-box;
+    font-size: 50%;
+  }
+}
+
+/* 900 - 1200 px -  Tab Land */
+@media only screen and (max-width: 75em) {
+  html {
+    box-sizing: border-box;
+    font-size: 56.25%;
+  }
+
+  .navigation {
+    height: 13rem;
+    padding: 2.5rem 7.5rem;
+  }
+
+  .nav_logo {
+    width: calc(30rem * 0.7);
+    height: calc(8rem * 0.7);
+  }
+
+  .nav_items {
+    gap: 3rem;
+    font-size: 2rem;
+  }
+
+  .cta-btn {
+    padding: 1.2rem 2.5rem;
+    font-size: 2.2rem;
+  }
+}
+
+/* 900+ px -  Tab Land */
+@media only screen and (min-width: 75em) {
+}
+
+/* 1800+ px -  Big Desktops */
+@media only screen and (min-width: 112.5em) {
+  html {
+    box-sizing: border-box;
+    font-size: 75%;
+  }
+}
+
+/* 
+:root {
+  --header-height: 3rem;
+  --nav-width: 10rem;
+  --first-color: #4723d9;
+  --first-color-light: #afa5d9;
+  --white-color: #f7f6fb;
+  --z-fixed: 100;
+} */
